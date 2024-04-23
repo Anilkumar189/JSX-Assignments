@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="d1"></div>
+        <script type="text/babel">
+            var ar=[12,45,33,76,67,57,90,33,1]
+            var a=<h1>{ar.map((s)=>{
+                return (s%2===0 ? <li><i>{s}</i></li>:<li><b>{s}</b></li>)
+            })
+        }</h1>
+        ReactDOM.render(a,document.getElementById("d1"))
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body type="text/babel">
+        <div id="d1"></div>
+        <script type="text/babel">
+            var ar=[
+            "https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg",
+            "https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg",
+            "https://static.vecteezy.com/system/resources/thumbnails/025/284/015/small_2x/close-up-growing-beautiful-forest-in-glass-ball-and-flying-butterflies-in-nature-outdoors-spring-season-concept-generative-ai-photo.jpg"
+            ]
+            var a=<h1>{ar.map((s)=>{
+                return <li> <img src={s} width="20%"/></li>
+                
+            })
+        }</h1>
+            ReactDOM.render(a,document.getElementById("d1"))
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="d1"></div>
+        <script type="text/babel">
+            var ar=[
+             "https://murdeshwarbeachhouse.com/wp-content/uploads/2023/01/murudeshwar-shiva-statue.jpg",
+             "https://i.pinimg.com/236x/5d/b5/10/5db510d52f750a1c90f6faaffe1b04a5.jpg",
+             "https://m.media-amazon.com/images/I/81T4jI-ooBL._AC_UF894,1000_QL80_.jpg"
+            ]
+
+            var b=<h1>{ar.map((a)=>{
+                return <img src={a} width="20%" />
+
+            })
+        }
+        </h1>
+            ReactDOM.render(b,document.getElementById("d1"))
+        </script>
+    </body>
+</html>

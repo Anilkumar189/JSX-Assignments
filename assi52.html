@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+    </head>
+    <body>
+        <div id="d1"></div>
+        <script type="text/babel">
+            var ar=[
+                "https://bsmedia.business-standard.com/_media/bs/img/article/2019-11/21/full/1574345810-7311.JPG",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Sir_CV_Raman.JPG/800px-Sir_CV_Raman.JPG",
+                "https://cgu-odisha.ac.in/wp-content/uploads/2023/05/c-v-raman.jpg"
+            ]
+            var a= <div>{
+                ar.map((s)=>{
+                    return <img src={s} width="20%"/>
+
+                })
+            }</div>
+            ReactDOM.render(a,document.getElementById("d1"))
+        </script>
+    </body>
+</html>

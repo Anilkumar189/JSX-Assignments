@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="d1"></div>
+        <script type="text/babel">
+            var ar=[
+                "https://files.worldwildlife.org/wwfcmsprod/images/Tiger_resting_Bandhavgarh_National_Park_India/hero_small/6aofsvaglm_Medium_WW226365.jpg",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN7YxCdqk8-4tiDslX_LhSisTRoXBublSmUbCl_Q7jsg&s",
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGEHk7Wdp77TetuoP6jhE9koEuUJVyjs7_vHS19HwN36-K-UwaYVnzyVPbQSbxKm2q7O0&usqp=CAU"
+
+            ]
+            var a=<h1>
+                <table>
+                    <tr>
+                        {ar.map((s)=>{
+                            return <td> <img src={s} width="90%"/></td>
+
+                        })}
+                        </tr>
+                        </table></h1>
+                        ReactDOM.render(a,document.getElementById("d1"))
+
+        </script>
+    </body>
+</html>

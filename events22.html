@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="d1"></div>
+        <script type="text/babel">
+            var ar=[]
+            function abc(e){
+                if(e.target.checked===false){
+                     
+                    var i=ar.indexOf(e.target.value);
+                    ar.splice(i,1);
+                    document.getElementById("d2").innerHTML=ar;
+
+                }
+        
+            else{
+                ar.push(e.target.value)
+                document.getElementById("d2").innerHTML=ar;
+            }
+        }
+            
+        var a= <div>
+            <input type="checkbox" name="" value="reactjs"  onChange={((event)=>{abc(event)})}/>:reactjs <br/><br/>
+            <input type="checkbox" name="" value="javascript" onChange={(event)=>{abc(event)}}/>:javascript<br/><br/>
+            <input type="checkbox" name=""  value="nodejs"    onChange={((event)=>{abc(event)})}/>:nodejs<br/><br/>
+            <input type="checkbox" name=""   value="express"  onChange={((event)=>{abc(event)})}/>:express<br/><br/>
+            <input type="checkbox" name=""  value="mongodb"   onChange={((event)=>{abc(event)})}/>:mongodb<br/><br/>
+            <input type="checkbox" name=""  value="mongoose" onChange={((event)=>{abc(event)})}/>:mongoose<br/><br/>
+            <input type="checkbox" name=""   value="my sql" onChange={((event)=>{abc(event)})}/>:my sql
+             <h1 id="d2"></h1>
+            </div> 
+            ReactDOM.render(a,document.getElementById("d1"))   
+
+        </script>
+    </body>
+</html>
